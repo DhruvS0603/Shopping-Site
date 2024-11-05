@@ -1,0 +1,420 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-size: 12px;
+    font-weight: 700;
+    color: #222;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom:3px solid #088178;
+
+}
+.header-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-list-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-list-nav ul li{
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+.header-list-nav ul a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+.header-list-nav ul a:hover,
+.header-list-nav ul a.active{
+    color: #088178;
+    content: "";
+    transition: 0.3s ease;
+}
+.header-logo img{
+    height:10%;
+    width:10%;
+    object-fit: contain;
+}
+.header-list-icon a{
+    color: #1a1a1a;
+    padding-left: 20px;
+    transition: 0.3s ease;
+}
+.header-list-icon a:hover{
+    color: #088178;
+}
+.header-list-nav ul li a:hover:after,
+.header-list-nav ul li a.active:after{
+    content: "";
+    width: 30%;
+    height: 2.5px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero{
+    background-image: url(https://previews.123rf.com/images/subbotina/subbotina1604/subbotina160400056/55256198-fashion-model-girl-portrait-isolated-over-white-background.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 80px;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+#hero h2{
+    font-size: 70px;
+}
+#hero h1{
+    font-size: 70px;
+    color: #088178;
+}
+#hero button{
+    background-color: transparent;
+    background-image: url(https://media.istockphoto.com/id/1308009978/video/paint-brush-strokes-of-black-on-a-white-background-hand-drawn-brush-stroke.jpg?s=640x640&k=20&c=Gvkowaqh2MroW5DokpUUVNiwg93MISZwfctghH1NCEs=);
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-size: cover;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: #088178;
+    padding: 14px 65px 14px 65px;
+}
+#hero button:hover{
+    color: white;
+}
+
+#features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#features .f-box{
+    width: 200px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 2px solid #cce7d0;
+    margin: 15px 0;
+    transition: box-shadow 0.3s;
+
+}
+
+#features .f-box:hover{
+    box-shadow: 10px 10px 54px rgba(0,0,0,0.2);
+}
+
+#features .f-box img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+#features .f-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    background-color: #cce7d0;
+    line-height: 1;
+    font-size: 14px;
+    color: #088178;
+    border-radius: 4px;
+
+}
+.product-section .product-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 60px;
+}
+.product-section h1,
+.product-section p{
+    text-align: center;
+}
+
+
+.product-section .product-cart{
+    width: 300px;
+    border: 1px solid #ebebeb;
+    padding: 12px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    transition: box-shadow 0.2s;
+    
+
+}
+
+.product-section .product-cart:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+}
+
+.product-section .product-cart img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.product-section .product-cart h4{
+    font-size: 18px;
+    color: rgb(41, 41, 41);
+}
+
+.product-section .product-cart span{
+    color: #969696;
+    font-weight: 500;
+    line-height: 30px;
+
+}
+.product-section .product-cart .stars{
+    color: #e6ae2c;
+    padding: 6px 0;
+}
+
+.product-section .product-cart .price{
+    color: #088178;
+    padding: 4px 0;
+}
+
+.product-section .product-cart .buy-icon{
+    color: #088178;
+    background-color: #c7e9e75e;
+    padding: 15px ;
+    position: absolute;
+    border-radius: 50px;
+    right: 10px;
+    bottom: 10px;
+}
+.product-section .product-cart .buy-icon:hover{
+    color: #c7e9e75e;
+    background-color: #465b52;
+    padding: 15px ;
+    position: absolute;
+    border-radius: 50px;
+    right: 10px;
+    bottom: 10px;
+
+}
+
+#off-banner{
+    background-image: url(https://img.lovepik.com/background/20211022/small/lovepik-promotions-posters-design-background-image_500642862.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#off-banner h4{
+    color: #ececec;
+}
+
+#off-banner h2{
+    color: #ececec;
+    padding: 20px 0;
+}
+
+#off-banner button{
+    font-size: 20px;
+    font-weight: 600px;
+    padding: 15px 30px;
+    color: #ececec;
+    border-radius: 10px;
+    width: 200px;
+    border: 2px solid #ececec;
+    cursor: pointer;
+    outline: none;
+    background-color: #54f545;
+    transition: 0.2s;
+}
+
+#off-banner button:hover{
+    color: #5b5858;
+    background-color: #a8f19c;
+    border: 2px solid #5b5858 ;
+}
+
+
+#banners{
+    margin: 0 60px;
+}
+
+#banners h2,#banners h4,#banners span{
+    color: rgb(248,248,248);
+}
+
+#banners .big-banners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banners .big-banners div{
+    min-width: 500px;
+    margin: 15px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    background-size: cover;
+    backdrop-filter: blur(8%);
+}
+
+#banners .big-banners-1{
+    background-image: url(https://cdn.vectorstock.com/i/1000v/14/55/fashion-clothes-banner-seamless-background-vector-15331455.jpg);
+
+}
+#banners .big-banners-2{
+    background-image: url(https://cdn3.vectorstock.com/i/1000x1000/12/07/background-clothing-and-accessories-vector-4201207.jpg);
+}
+#banners .small-banners-1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1ZpIWTDqCakb41yXRhiffmwfkobTslqX7K8V2q3WnILKyU1KuBTA1_f261YzXWTzmBU&usqp=CAU);
+    
+}
+#banners .small-banners-2{
+    background-image: url(https://www.shutterstock.com/image-vector/fashion-seamless-background-clothing-collection-260nw-1491057866.jpg);
+    
+}
+#banners .small-banners-3{
+    background-image: url(https://as2.ftcdn.net/v2/jpg/02/85/86/83/1000_F_285868337_UJwkW55vZwHyfzXVEGc54l4mskmXed8y.jpg);
+    
+}
+#banners .big-banners button{
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    color: rgb(248,248,248);
+    border: 1px solid rgb(248,248,248);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 2px;
+}
+
+#banners .big-banners button:hover{
+    background-color: #088178;
+    border: 1px solid rgb(248,248,248);
+    border-radius: 2px;
+}
+
+#banners .small-banners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banners .small-banners div{
+    min-width: 370px;
+    height: 200px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px;
+    background-size: cover;
+}
+
+
+#banners .small-banners h2{
+    color: #465b52;
+    font-size: 25px;
+}
+
+#banners .small-banners h5{
+    color: rgb(120, 120, 126);
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 75px;
+    background-color: #ececec;
+    border-top: 2px solid #1a1a1a;
+}
+
+#footer p, #footer a{
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+
+}
+
+#footer align-self:hover{
+    color: #088178;
+}
+
+#footer .about a{
+    display: block;
+    padding: 8px 0;
+}
+
+#footer .myaccount a{
+    display: block;
+    padding: 8px 0;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.footer .socials,.footer .about,.footer .myaccount,.footer .install,.footer address{
+    margin-left: 20px;
+}
+
